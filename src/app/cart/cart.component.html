@@ -6,3 +6,14 @@
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
 </div>
+<form [formGroup]="checkoutForm" (submit)="onSubmit()">
+  <div>
+    <label for="name">Name</label>
+    <input id="name" formControlName="name" type="text" />
+  </div>
+  <div>
+    <label for="address">Address</label>
+    <input id="address" formControlName="address" type="text" />
+  </div>
+  <button class="button" type="submit">Purchase</button>
+</form>
