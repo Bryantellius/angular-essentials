@@ -1,11 +1,10 @@
-import { Injectable } from '@angular/core';
-import { Product } from './products';
-import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
-import { HttpClient } from '@angular/common/http';
+import { Injectable } from "@angular/core";
+import { Product } from "./products";
+import { Observable } from "rxjs";
+import { HttpClient } from "@angular/common/http";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class CartService {
   items: Product[] = [];
@@ -31,7 +30,7 @@ export class CartService {
 
   public getShippingPrices(): Observable<{ type: string; price: number }[]> {
     return this.http.get<{ type: string; price: number }[]>(
-      '/assets/shipping.json'
+      "/assets/shipping.json"
     );
   }
 }

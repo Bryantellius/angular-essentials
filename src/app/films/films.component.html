@@ -1,0 +1,5 @@
+<h1>Studio Ghibli Films</h1>
+<div class="film-item" *ngFor="let film of films | async">
+  <h2>{{ film.title }}</h2>
+  <p>{{ film.description }}</p>
+</div>
