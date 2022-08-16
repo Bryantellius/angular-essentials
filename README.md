@@ -6,6 +6,8 @@ Personal study project based from Angular's Try It tutorials focusing on archite
 
 Project code started from [StackBlitz](https://stackblitz.com/edit/angular-secwji)
 
+### Product, Shipping, and Film Components
+
 Started along with Angular Docs:
 
 1. [Getting Started](https://angular.io/start)
@@ -22,6 +24,10 @@ Then continued with my own combination of the Angular 'Heroes' Tutorials:
 4. [Add services](https://angular.io/tutorial/toh-pt4)
 5. [Add navigation](https://angular.io/tutorial/toh-pt5)
 6. [Get data from a server](https://angular.io/tutorial/toh-pt6)
+
+### Map Component
+
+Followed along from [fireship.io's Tutorial](https://fireship.io/lessons/build-realtime-maps-in-angular-with-mapbox-gl/)
 
 ## Scripts
 

@@ -22,6 +22,7 @@ import { DashboardComponent } from "./dashboard/dashboard.component";
 import { MatGridListModule } from "@angular/material/grid-list";
 import { MatCardModule } from "@angular/material/card";
 import { MatMenuModule } from "@angular/material/menu";
+import { MapboxComponent } from "./mapbox/mapbox.component";
 
 @NgModule({
   imports: [
@@ -33,6 +34,7 @@ import { MatMenuModule } from "@angular/material/menu";
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: "", component: DashboardComponent },
+      { path: "mapbox", component: MapboxComponent },
       { path: "products", component: ProductListComponent },
       { path: "products/:productId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
@@ -58,6 +60,7 @@ import { MatMenuModule } from "@angular/material/menu";
     FilmsComponent,
     NavComponent,
     DashboardComponent,
+    MapboxComponent,
   ],
   bootstrap: [AppComponent],
 })

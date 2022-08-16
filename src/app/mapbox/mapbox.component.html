@@ -1,0 +1,12 @@
+<input
+  type="text"
+  [(ngModel)]="message"
+  id="message"
+  placeholder="Marker Message..."
+/>
+<h1>Markers</h1>
+<div *ngFor="let marker of markers | async">
+  <button (click)="flyTo(marker)">{{ marker.properties.message }}</button>
+  <button (click)="removeMarker(marker)">Delete</button>
+</div>
+<div class="map" id="map"></div>
